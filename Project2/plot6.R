@@ -42,4 +42,5 @@ g <- g + geom_bar(stat="identity")  +
     ylab(expression('Total PM'[2.5]*" Emissions")) +
     ggtitle('Total Emissions from motor vehicle (type=ON-ROAD) in Baltimore City, MD (fips = "24510") vs Los Angeles, CA (fips = "06037")  1999-2008')
 print(g)
+dev.copy(png, file = "plot6.png")
 dev.off()

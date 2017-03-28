@@ -40,5 +40,6 @@ g <- g + geom_line() +
 #print plot
 print(g)
 
+dev.copy(png, file = "plot3.png")
 #close graphics device
 dev.off()
